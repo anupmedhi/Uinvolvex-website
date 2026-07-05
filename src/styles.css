@@ -157,25 +157,22 @@ button { font: inherit; }
   .brand-lockup { font-size: 1.25rem; }
   body.menu-open { overflow: hidden; }
   .menu-button {
+    width: 42px;
     min-height: 42px;
-    padding: 0 6px 0 13px;
+    padding: 0;
     display: inline-flex;
     align-items: center;
-    gap: 11px;
+    justify-content: center;
     border: 1px solid #cfd6e3;
-    box-shadow: inset 3px 0 0 var(--blue);
     background: #f7f9fd;
     color: var(--ink);
-    font: 600 .69rem/1 var(--mono);
-    letter-spacing: .04em;
-    text-transform: uppercase;
   }
   .menu-icon {
-    width: 29px;
-    height: 29px;
+    width: 30px;
+    height: 30px;
     display: grid;
     place-content: center;
-    gap: 5px;
+    gap: 4px;
     background: var(--ink);
   }
   .menu-icon span {
@@ -185,10 +182,11 @@ button { font: inherit; }
     background: #fff;
     transition: transform 180ms ease;
   }
-  .menu-button[aria-expanded='true'] { border-color: var(--ink); background: var(--ink); color: #fff; }
+  .menu-button[aria-expanded='true'] { border-color: var(--ink); background: var(--ink); }
   .menu-button[aria-expanded='true'] .menu-icon { background: var(--blue); }
-  .menu-button[aria-expanded='true'] .menu-icon span:first-child { transform: translateY(3px) rotate(45deg); }
-  .menu-button[aria-expanded='true'] .menu-icon span:last-child { transform: translateY(-3px) rotate(-45deg); }
+  .menu-button[aria-expanded='true'] .menu-icon span:first-child { transform: translateY(5px) rotate(45deg); }
+  .menu-button[aria-expanded='true'] .menu-icon span:nth-child(2) { opacity: 0; }
+  .menu-button[aria-expanded='true'] .menu-icon span:last-child { transform: translateY(-5px) rotate(-45deg); }
   .site-nav { position: fixed; z-index: 30; inset: 76px 0 auto; height: calc(100svh - 76px); padding: 3rem 5vw; flex-direction: column; align-items: flex-start; gap: 2rem; background: #fff; transform: translateY(-120%); opacity: 0; pointer-events: none; transition: transform 220ms ease, opacity 220ms ease; }
   .site-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
   .site-nav a { font-size: 2rem; letter-spacing: -.04em; }

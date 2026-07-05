@@ -105,12 +105,13 @@ function App() {
         <button
           className="menu-button"
           type="button"
+          aria-label={menuOpen ? 'Close navigation' : 'Open navigation'}
           aria-expanded={menuOpen}
           aria-controls="site-nav"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <span className="menu-label">{menuOpen ? 'Close' : 'Menu'}</span>
           <span className="menu-icon" aria-hidden="true">
+            <span />
             <span />
             <span />
           </span>
