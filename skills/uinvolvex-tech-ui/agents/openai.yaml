@@ -1,0 +1,7 @@
+interface:
+  display_name: "UinvolveX Tech UI"
+  short_description: "Design bold, disciplined UinvolveX interfaces"
+  icon_small: "./assets/x-favicon.png"
+  icon_large: "./assets/x-icon.png"
+  brand_color: "#245DFF"
+  default_prompt: "Use $uinvolvex-tech-ui to design or refine this UinvolveX interface."
