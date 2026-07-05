@@ -89,6 +89,11 @@ function App() {
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [])
 
+  useEffect(() => {
+    document.body.classList.toggle('menu-open', menuOpen)
+    return () => document.body.classList.remove('menu-open')
+  }, [menuOpen])
+
   const closeMenu = () => setMenuOpen(false)
 
   return (
@@ -104,7 +109,11 @@ function App() {
           aria-controls="site-nav"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {menuOpen ? 'Close' : 'Menu'}
+          <span className="menu-label">{menuOpen ? 'Close' : 'Menu'}</span>
+          <span className="menu-icon" aria-hidden="true">
+            <span />
+            <span />
+          </span>
         </button>
         <nav id="site-nav" className={menuOpen ? 'site-nav open' : 'site-nav'} aria-label="Main navigation">
           <a href="#work" onClick={closeMenu}>Products</a>
