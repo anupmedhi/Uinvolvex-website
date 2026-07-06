@@ -9,13 +9,6 @@ type Project = {
   domain?: string
 }
 
-type Capability = {
-  title: string
-  description: string
-  type?: string
-  className?: string
-}
-
 const projects: Project[] = [
   {
     name: 'The Nextdoor',
@@ -39,29 +32,25 @@ const projects: Project[] = [
     description: 'An AI agent that helps people test assumptions, surface risks, and validate an idea before committing significant time and resources.',
     theme: 'ideaboard',
   },
-]
-
-const capabilities: Capability[] = [
-  { title: 'Product design', description: 'Product definition, user flows, interface design, and prototypes.' },
-  { title: 'Web applications', description: 'Responsive, maintainable applications built for real-world use.' },
-  { title: 'Marketing', description: 'Campaign planning, digital marketing, creative direction, and performance advertising.' },
   {
-    title: 'Xline Studio',
+    name: 'Xline Studio',
     type: 'Branding and marketing studio',
-    description: 'Brand strategy, identity design, marketing, campaign creative, and digital advertising.',
-    className: 'service xline',
+    description: 'A creative studio for brand strategy, identity, campaigns, marketing, and digital advertising.',
+    theme: 'xline-studio',
+    url: 'https://www.xlinstudio.in',
+    domain: 'xlinstudio.in',
   },
   {
-    title: 'One World',
+    name: 'One World',
     type: 'Influencer marketing agency',
-    description: 'Creator discovery, influencer partnerships, campaign management, and brand collaborations.',
-    className: 'service one-world',
+    description: 'Creator-led campaigns, influencer partnerships, and brand collaborations built for culture and reach.',
+    theme: 'one-world-project',
   },
   {
-    title: 'Generative AI for business',
-    type: 'For small and medium businesses',
-    description: 'Practical AI systems for automating repetitive work, improving customer support, searching business knowledge, and connecting AI to existing workflows.',
-    className: 'service gen-ai',
+    name: 'Colourseed Capital',
+    type: 'Early-stage investment firm',
+    description: 'Backing early-stage startups with capital, strategic support, and a long-term operating perspective.',
+    theme: 'colourseed',
   },
 ]
 
@@ -119,7 +108,6 @@ function App() {
         <nav id="site-nav" className={menuOpen ? 'site-nav open' : 'site-nav'} aria-label="Main navigation">
           <a href="#work" onClick={closeMenu}>Products</a>
           <a href="#company" onClick={closeMenu}>Company</a>
-          <a href="#capabilities" onClick={closeMenu}>Capabilities</a>
           <a className="nav-cta" href="#contact" onClick={closeMenu}>Contact <Arrow /></a>
         </nav>
       </header>
@@ -186,23 +174,6 @@ function App() {
           </div>
         </section>
 
-        <section className="capabilities section" id="capabilities">
-          <div className="section-title compact">
-            <h2>Capabilities and services.</h2>
-          </div>
-          <div className="capability-grid">
-            {capabilities.map((capability) => (
-              <article className={capability.className ?? ''} key={capability.title}>
-                <div>
-                  {capability.type && <p className="service-type">{capability.type}</p>}
-                  <h3>{capability.title}</h3>
-                </div>
-                <p className="capability-description">{capability.description}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
         <section className="contact" id="contact">
           <div>
             <h2>Have a product<br />to build?</h2>
@@ -223,13 +194,12 @@ function App() {
           <p className="footer-label">Explore</p>
           <a href="#work">Products</a>
           <a href="#company">Company</a>
-          <a href="#capabilities">Capabilities</a>
         </div>
         <div className="footer-column">
           <p className="footer-label">Websites</p>
           <a href="https://thenextdoorindia.in" target="_blank" rel="noreferrer">The Nextdoor <Arrow /></a>
           <a href="https://zestway.in" target="_blank" rel="noreferrer">Zestway <Arrow /></a>
-          <a href="https://xlinestudios.in" target="_blank" rel="noreferrer">Xline Studios <Arrow /></a>
+          <a href="https://www.xlinstudio.in" target="_blank" rel="noreferrer">Xline Studio <Arrow /></a>
         </div>
         <div className="footer-column footer-contact">
           <p className="footer-label">Contact</p>
