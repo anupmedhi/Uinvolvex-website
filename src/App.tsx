@@ -115,8 +115,8 @@ function App() {
       <main id="main">
         <section className="hero" id="top">
           <div className="hero-copy">
-            <h1>We build and operate digital products.</h1>
-            <p>UinvolveX is a technology company based in Guwahati. We turn useful ideas into software, platforms, and new ventures.</p>
+            <h1>We build, operate, and back ambitious ventures.</h1>
+            <p>From Guwahati, UinvolveX turns promising ideas into digital products, businesses, and brands built for the world.</p>
             <div className="hero-actions">
               <a className="button primary" href="#work">View our products</a>
               <a className="button secondary" href="#contact">Discuss a project</a>
@@ -134,8 +134,8 @@ function App() {
 
         <section className="products section" id="work">
           <div className="section-title">
-            <h2>Products and services from UinvolveX.</h2>
-            <p>We build digital products, specialist services, and new ventures from Northeast India.</p>
+            <h2>Ventures from UinvolveX.</h2>
+            <p>We build, operate, and back ambitious ventures from Northeast India.</p>
           </div>
 
           <div className="product-list">
