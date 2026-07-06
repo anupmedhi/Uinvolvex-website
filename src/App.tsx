@@ -134,8 +134,8 @@ function App() {
 
         <section className="products section" id="work">
           <div className="section-title">
-            <h2>Products from UinvolveX.</h2>
-            <p>We develop focused digital products from our home in Northeast India.</p>
+            <h2>Products and services from UinvolveX.</h2>
+            <p>We build digital products, specialist services, and new ventures from Northeast India.</p>
           </div>
 
           <div className="product-list">
