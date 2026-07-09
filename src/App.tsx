@@ -12,16 +12,16 @@ type Project = {
 const projects: Project[] = [
   {
     name: 'The Nextdoor',
-    type: 'Community platform',
-    description: 'A digital platform focused on helping people discover what is useful, relevant, and available around them.',
+    type: 'Startup ecosystem platform',
+    description: "Bringing the startup ecosystem to the doorstep of colleges in small-town India by connecting grassroots founders with incubators, grants, and mentorship.",
     theme: 'nextdoor',
     url: 'https://thenextdoorindia.in',
     domain: 'thenextdoorindia.in',
   },
   {
     name: 'Zestway',
-    type: 'Digital venture',
-    description: 'A new consumer product being developed in-house at UinvolveX.',
+    type: 'F&B growth venture / PrimePOS',
+    description: 'From branding and marketing to operations and technology, Zestway India helps food and beverage businesses scale smarter — now building PrimePOS for faster, cleaner restaurant operations.',
     theme: 'zestway',
     url: 'https://zestway.in',
     domain: 'zestway.in',
