@@ -179,8 +179,8 @@ function App() {
             <h2>Have a product<br />to build?</h2>
             <p>Tell us what you are working on and where you need help.</p>
           </div>
-          <a className="contact-email" href="mailto:hello@uinvolvex.com">
-            hello@uinvolvex.com <Arrow />
+          <a className="contact-email" href="mailto:uinvolvex@gmail.com">
+            uinvolvex@gmail.com <Arrow />
           </a>
         </section>
       </main>
@@ -203,7 +203,7 @@ function App() {
         </div>
         <div className="footer-column footer-contact">
           <p className="footer-label">Contact</p>
-          <a href="mailto:hello@uinvolvex.com">hello@uinvolvex.com</a>
+          <a href="mailto:uinvolvex@gmail.com">uinvolvex@gmail.com</a>
           <p>Guwahati, Assam, India</p>
         </div>
         <div className="footer-bottom">
