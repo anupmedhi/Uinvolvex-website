@@ -170,10 +170,67 @@ button { font: inherit; }
   .menu-button[aria-expanded='true'] .menu-icon span:first-child { transform: translateY(7.25px) rotate(45deg); }
   .menu-button[aria-expanded='true'] .menu-icon span:nth-child(2) { opacity: 0; }
   .menu-button[aria-expanded='true'] .menu-icon span:last-child { transform: translateY(-7.25px) rotate(-45deg); }
-  .site-nav { position: fixed; z-index: 30; inset: 76px 0 auto; height: calc(100svh - 76px); padding: 3rem 5vw; flex-direction: column; align-items: flex-start; gap: 2rem; background: #fff; transform: translateY(-120%); opacity: 0; pointer-events: none; transition: transform 220ms ease, opacity 220ms ease; }
+  .site-nav {
+    position: fixed;
+    z-index: 30;
+    inset: 76px 0 auto;
+    height: calc(100svh - 76px);
+    padding: 2rem 20px 1.25rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background:
+      linear-gradient(145deg, rgba(36,93,255,.08), transparent 42%),
+      #fff;
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 220ms ease, opacity 220ms ease;
+  }
   .site-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
-  .site-nav a { font-size: 2rem; letter-spacing: -.04em; }
-  .site-nav .nav-cta { margin-top: auto; font-size: 1rem; }
+  .site-nav::before {
+    content: 'Navigate';
+    margin-bottom: 1.35rem;
+    font: .68rem var(--mono);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #7a8598;
+  }
+  .site-nav a {
+    min-height: 86px;
+    padding: 0 0 .1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--line-light);
+    color: var(--ink);
+    font-size: clamp(2.45rem, 12vw, 4.1rem);
+    line-height: .9;
+    letter-spacing: -.07em;
+  }
+  .site-nav a:not(.nav-cta)::after {
+    color: var(--blue);
+    font: .72rem var(--mono);
+    letter-spacing: 0;
+  }
+  .site-nav a:nth-child(1)::after { content: '01'; }
+  .site-nav a:nth-child(2)::after { content: '02'; }
+  .site-nav .nav-cta {
+    min-height: 78px;
+    margin-top: auto;
+    padding: 0 1.25rem;
+    border: 0;
+    background: var(--blue);
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: -.035em;
+  }
+  .site-nav .nav-cta::before {
+    content: 'Start a conversation';
+    margin-right: auto;
+    font: .66rem var(--mono);
+    color: rgba(255,255,255,.66);
+  }
   .hero { min-height: 920px; padding-top: 11rem; }
   .hero-copy { grid-column: 1 / span 10; }
   .hero-visual { width: 650px; right: -260px; top: 16rem; opacity: .56; }
