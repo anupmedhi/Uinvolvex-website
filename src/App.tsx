@@ -37,8 +37,8 @@ const projects: Project[] = [
     type: 'Branding and marketing studio',
     description: 'A creative studio for brand strategy, identity, campaigns, marketing, and digital advertising.',
     theme: 'xline-studio',
-    url: 'https://www.xlinstudio.in',
-    domain: 'xlinstudio.in',
+    url: 'https://xlinestudio.in/',
+    domain: 'xlinestudio.in',
   },
   {
     name: 'One World',
@@ -199,7 +199,7 @@ function App() {
           <p className="footer-label">Websites</p>
           <a href="https://thenextdoorindia.in" target="_blank" rel="noreferrer">The Nextdoor <Arrow /></a>
           <a href="https://zestway.in" target="_blank" rel="noreferrer">Zestway <Arrow /></a>
-          <a href="https://www.xlinstudio.in" target="_blank" rel="noreferrer">Xline Studio <Arrow /></a>
+          <a href="https://xlinestudio.in/" target="_blank" rel="noreferrer">Xline Studio <Arrow /></a>
         </div>
         <div className="footer-column footer-contact">
           <p className="footer-label">Contact</p>
