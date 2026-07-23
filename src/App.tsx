@@ -31,6 +31,8 @@ const projects: Project[] = [
     type: 'AI validation agent',
     description: 'An AI agent that helps people test assumptions, surface risks, and validate an idea before committing significant time and resources.',
     theme: 'ideaboard',
+    url: 'https://ideaboard.live/',
+    domain: 'ideaboard.live',
   },
   {
     name: 'Xline Studio',
