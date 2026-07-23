@@ -201,7 +201,9 @@ function App() {
           <p className="footer-label">Websites</p>
           <a href="https://thenextdoorindia.in" target="_blank" rel="noreferrer">The Nextdoor <Arrow /></a>
           <a href="https://zestway.in" target="_blank" rel="noreferrer">Zestway <Arrow /></a>
+          <a href="https://ideaboard.live/" target="_blank" rel="noreferrer">Ideaboard <Arrow /></a>
           <a href="https://xlinestudio.in/" target="_blank" rel="noreferrer">Xline Studio <Arrow /></a>
+          <a href="#work">Colourseed Capital</a>
         </div>
         <div className="footer-column footer-contact">
           <p className="footer-label">Contact</p>
